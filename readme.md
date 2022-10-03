@@ -14,9 +14,10 @@ rm -rf ./colour-app/templates/*
 helm package . --version 1.0.0
 ```
 
-# Push to ECR 
+# Push to ECR
+https://docs.aws.amazon.com/AmazonECR/latest/public/push-oci-artifact.html
+ 
 ```
-# https://docs.aws.amazon.com/AmazonECR/latest/public/push-oci-artifact.html
 
 # create a repository for chart. NB: region has to be us-east-1 for public ECR
 aws ecr-public create-repository --repository-name colour-app --region us-east-1
